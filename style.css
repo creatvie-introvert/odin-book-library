@@ -1,0 +1,73 @@
+:root {
+    --body-bg: #1e1e1e;
+    --card-border: #333;
+    --card-bg: #121212;
+    --text-color: #fff;
+    --box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* reset browser defaults */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    color: var(--text-color);
+    background-color: var(--body-bg);
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+}
+
+.book-card {
+    background-color: var(--card-bg);
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
